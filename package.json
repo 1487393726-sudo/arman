@@ -1,0 +1,77 @@
+{
+  "name": "hacker-file-search",
+  "version": "2.2.0",
+  "description": "A hacker-style local file search application with persistent indexing",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "dev:main": "tsc -p tsconfig.main.json && electron .",
+    "dev:renderer": "vite",
+    "build": "npm run build:main && npm run build:renderer",
+    "build:main": "tsc -p tsconfig.main.json",
+    "build:renderer": "vite build",
+    "package": "electron-builder",
+    "start": "electron ."
+  },
+  "keywords": [
+    "file-search",
+    "hacker",
+    "electron",
+    "search",
+    "ascii-art",
+    "terminal"
+  ],
+  "author": "OMEGA1947",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "chokidar": "^3.5.3",
+    "electron-store": "^8.1.0",
+    "fuse.js": "^7.0.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^4.0.2",
+    "concurrently": "^8.2.2",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.7",
+    "vitest": "^4.0.2"
+  },
+  "build": {
+    "appId": "com.hacker.filesearch",
+    "productName": "HackerFileSearch",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json",
+      "config.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.png"
+    },
+    "mac": {
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Icons Preview - OMEGA1947</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            background: #0a0e14;
+            color: #00ff41;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #00ff4144;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ff41;
+            margin-bottom: 10px;
+        }
+        
+        .header .author {
+            color: #00ffff;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .category {
+            margin-bottom: 40px;
+        }
+        
+        .category-title {
+            font-size: 20px;
+            color: #00ffff;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(0, 255, 255, 0.1);
+            border-left: 4px solid #00ffff;
+        }
+        
+        .icons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .icon-card {
+            background: #1a1f29;
+            padding: 15px;
+            border: 1px solid #00ff4144;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .icon-card:hover {
+            border-color: #00ff41;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .icon-display {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px currentColor;
+        }
+        
+        .icon-label {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .icon-ext {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #00ff4144;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>╔═══ FILE ICONS PREVIEW ═══╗</h1>
+        <p class="author">Developer: OMEGA1947</p>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◈ 文档类型 / Document Types</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff3333;">◈ [PDF]</div>
+                <div class="icon-label">.pdf</div>
+                <div class="icon-ext">PDF Documents</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #2b579a;">◈ [DOC]</div>
+                <div class="icon-label">.doc, .docx</div>
+                <div class="icon-ext">Word Documents</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #00ff41;">◈ [TXT]</div>
+                <div class="icon-label">.txt, .md</div>
+                <div class="icon-ext">Text Files</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #1d6f42;">◈ [XLS]</div>
+                <div class="icon-label">.xls, .xlsx</div>
+                <div class="icon-ext">Excel Files</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #d24726;">◈ [PPT]</div>
+                <div class="icon-label">.ppt, .pptx</div>
+                <div class="icon-ext">PowerPoint</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◆ 编程语言 / Programming Languages</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #f7df1e;">◆ [JS]</div>
+                <div class="icon-label">.js</div>
+                <div class="icon-ext">JavaScript</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #3178c6;">◆ [TS]</div>
+                <div class="icon-label">.ts, .tsx</div>
+                <div class="icon-ext">TypeScript</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #3776ab;">◆ [PY]</div>
+                <div class="icon-label">.py</div>
+                <div class="icon-ext">Python</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #f89820;">◆ [JAVA]</div>
+                <div class="icon-label">.java</div>
+                <div class="icon-ext">Java</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #00599c;">◆ [C++]</div>
+                <div class="icon-label">.cpp</div>
+                <div class="icon-ext">C++</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #00add8;">◆ [GO]</div>
+                <div class="icon-label">.go</div>
+                <div class="icon-ext">Go</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #dea584;">◆ [RUST]</div>
+                <div class="icon-label">.rs</div>
+                <div class="icon-ext">Rust</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #777bb4;">◆ [PHP]</div>
+                <div class="icon-label">.php</div>
+                <div class="icon-ext">PHP</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◇ 数据格式 / Data Formats</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ffaa00;">◇ [JSON]</div>
+                <div class="icon-label">.json</div>
+                <div class="icon-ext">JSON Data</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff6600;">◇ [XML]</div>
+                <div class="icon-label">.xml</div>
+                <div class="icon-ext">XML Data</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #cc0000;">◇ [YAML]</div>
+                <div class="icon-label">.yaml</div>
+                <div class="icon-ext">YAML Config</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #e38c00;">◇ [SQL]</div>
+                <div class="icon-label">.sql</div>
+                <div class="icon-ext">SQL Script</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◐ Web 文件 / Web Files</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #e34c26;">◐ [HTML]</div>
+                <div class="icon-label">.html</div>
+                <div class="icon-ext">HTML</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #1572b6;">◐ [CSS]</div>
+                <div class="icon-label">.css</div>
+                <div class="icon-ext">CSS</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #42b883;">◐ [VUE]</div>
+                <div class="icon-label">.vue</div>
+                <div class="icon-ext">Vue</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◘ 图像/媒体 / Images/Media</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #00ffff;">◘ [PNG]</div>
+                <div class="icon-label">.png</div>
+                <div class="icon-ext">PNG Image</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #00ffff;">◘ [JPG]</div>
+                <div class="icon-label">.jpg</div>
+                <div class="icon-ext">JPEG Image</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ffb13b;">◘ [SVG]</div>
+                <div class="icon-label">.svg</div>
+                <div class="icon-ext">Vector Image</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff00ff;">▶ [VID]</div>
+                <div class="icon-label">.mp4</div>
+                <div class="icon-ext">Video</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff00ff;">♪ [AUD]</div>
+                <div class="icon-label">.mp3</div>
+                <div class="icon-ext">Audio</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-title">◙ 可执行文件 / Executables</div>
+        <div class="icons-grid">
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff3333;">◙ [EXE]</div>
+                <div class="icon-label">.exe</div>
+                <div class="icon-ext">Executable</div>
+            </div>
+            <div class="icon-card">
+                <div class="icon-display" style="color: #ff6666;">◙ [LIB]</div>
+                <div class="icon-label">.dll</div>
+                <div class="icon-ext">Library</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 OMEGA1947 - All Rights Reserved</p>
+        <p>Hacker File Search v2.1.0</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "theme": {
+    "style": "hacker",
+    "colors": {
+      "background": "#0a0e14",
+      "foreground": "#00ff41",
+      "selection": "#1a3a1a",
+      "border": "#00ff4144",
+      "warning": "#ffaa00",
+      "error": "#ff3333",
+      "info": "#00ffff"
+    },
+    "effects": {
+      "scanlines": true,
+      "cursorBlink": true,
+      "glowEffect": true
+    }
+  },
+  "search": {
+    "maxResults": 1000,
+    "fuzzyMatch": true,
+    "caseSensitive": false,
+    "includeHidden": false,
+    "indexPaths": [
+      "C:\\Users\\Administrator\\Desktop",
+      "C:\\Users\\Administrator\\Documents",
+      "C:\\Users\\Administrator\\Downloads"
+    ],
+    "excludePaths": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/bin/**",
+      "**/obj/**",
+      "**/dist/**",
+      "**/.vscode/**",
+      "**/.next/**",
+      "**/build/**",
+      "**/__pycache__/**",
+      "**/target/**",
+      "**/.idea/**",
+      "**/vendor/**",
+      "**/venv/**",
+      "**/.cache/**"
+    ],
+    "excludeExtensions": [".tmp", ".cache", ".log", ".temp"]
+  },
+  "hotkey": {
+    "global": "CommandOrControl+Tab",
+    "alternate": "CommandOrControl+Space",
+    "settings": "CommandOrControl+,"
+  },
+  "window": {
+    "width": 600,
+    "height": 90,
+    "fontSize": 27,
+    "compactMode": false
+  },
+  "performance": {
+    "maxIndexSize": 1000000,
+    "updateInterval": 5000,
+    "contentSearchLimit": 52428800
+  }
+}
